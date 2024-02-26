@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Hotel Real Jilo</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+
+</head>
+<body>
+    <section class="content-form">
+        <h3>Bienvenido a Hotel real Jilo </h3>
+        <form id="frmHotel">
+            <input id="txtDiasHosp" class="cajas-texto" type="number" placeholder="Dias hospedados">
+            <input id="txtPrecioDiario" class="cajas-texto" type="number" placeholder="Precio diario habitacion">
+            <!--<input type="button" placeholder="Calcular hospedaje">Ya no utilozar con input sino con etiqueta button-->
+            <select id="cmbTipoPago" size="1">
+                <option value="No">--Seleccione tipo de pago--</option>
+                <option value="Efectivo">--Efectivo--</option>
+                <option value="Tarjeta">--Tarjeta--</option>
+            </select>
+            <button id="botones" types="submit">Calcular hospedaje</button>
+            <button id="botones" types="reset">Cancelar</button>
+        </form>
+        <h4 id="resultado"></h4>
+    </section>
+    <script src="js/hotel.js"></script>
+</body>
+</html>
+<!--leer los datos de un empleado, nombre, tipo de empleado, numero de horas trabajadas y sueldo por hora, calcular e imprimir el sueldo a pagar, 
+    si el empleado es tipo 1 se le pagan las horas extra (mas de 40 horas a 1.5 de la cuota por hora)-
+    si es tipo 2 a 2 
+    si es tipo 3 a 2.5 
+    y si es tipo 4 a 3 veces la cuota por hora ->
